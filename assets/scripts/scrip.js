@@ -16,7 +16,6 @@ function operacion(op){
             resul.innerText=n1/n2;
             break;
         default:
-            resul.innerText="No resuelto"
-            alert("No tengo tu operación debiste usar un simbolo diferente")
+           
     }
 }
