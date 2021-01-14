@@ -4,15 +4,18 @@
     box-sizing:border-box;
     
 }
-
+body{
+    height: 100vh;
+}
 section{
     background-color: #ffffff;
     display: grid;
-    width: 50%;
+    width: 80%;
     padding-top: 50px;
     margin: auto;
     justify-content: center;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
 }
 
 h1{
@@ -27,13 +30,21 @@ h1{
 }
 .numeros{
     padding: 20px;
+    margin: 10px;
     display: grid;
     grid-auto-flow: column;
 }
 input{
     padding: 10px 10px;
     border-radius: 5px;
-    
+    margin: 10px;
+    border: 1px solid #146189;
+    color: #000;
+}
+input:focus{
+    outline: none;
+    border:  #146189;
+    background-color: #359dd4;
 }
 .boton{
     display: flex;
@@ -47,7 +58,6 @@ button{
     background:none;
     border: #146189 solid 2px;
     margin-left: 25px;
-
 }
 button:hover{
     background-color: #146189;
@@ -64,6 +74,87 @@ button:hover{
 h2,div,input,button{
     font-size: 20px;
 }
-footer svg{
-    height: 100%;
+.wave{
+    width: 100%;
+    height: 40.7vh;
+    background-image: url("../img/wave.svg");
+    background-size: cover;
+}
+@media screen and (max-width:1085px){
+    .wave{
+        width: 100%;
+        height: 33%;
+    }
+}
+@media screen and (max-width:650px){
+    h1{
+        font-size: 70px;
+    }
+    .linea{
+        width: 80%;
+        margin: auto;
+    }
+    .numeros{
+        margin: 0;
+    }
+    .wave{
+        width: 100%;
+        height: 37.5%;
+    }
+}
+@media screen and (max-width:638px){
+    input{
+        width: 80%;
+    }
+    .numeros{
+        display: flex;
+        justify-content: center;
+    }
+}
+@media screen and (max-width:475px){
+    h1{
+        font-size: 60px;
+    }
+    h2,div,input,button{
+        font-size: 15px;
+    }
+    .wave{
+        width: 100%;
+        height: 43%;
+    }
+}
+@media screen and (max-width:420px){
+    h1{
+        font-size: 50px;
+    }
+}
+@media screen and (max-width:340px){
+    .wave{
+        width: 100%;
+        height: 45%;
+    }
+    section{
+        width: 100%;
+        margin: 5px;
+    }
+}
+@media screen and (max-width:325px){
+    h1{
+        font-size: 40px;
+    }
+    button{
+        width: 40px;
+        height: 40px;
+    }
+    #resul{
+        width: 30%;
+    }
+}
+@media screen and (max-width:280px){
+    h1{
+        font-size: 35px;
+    }
+    .wave{
+        width: 100%;
+    }
 }
